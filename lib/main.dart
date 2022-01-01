@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tribe_app/futures/post/application/post_state.dart';
-import 'package:tribe_app/futures/post/domain/usecase/get_posts.dart';
-import 'package:tribe_app/futures/post/infrastructure/data/post_remot_data.dart';
-import 'package:tribe_app/futures/post/infrastructure/repository/post_repository_impl.dart';
-
+import 'core/utils/dependencies_injection.dart';
 import 'futures/post/presentation/screens/posts_screen.dart';
 
-void main() {
+void main() async{
+  await init();
   runApp(const MyApp());
 }
 
@@ -19,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(providers: [
       ChangeNotifierProvider<PostState>(
-        create: (_)=>PostState(getPosts: GetPosts(repository: PostRepositoryImpl(postRemoteData: PostRemoteDataImpl(),))),
+        create: (_)=>sl<PostState>(),
       )
     ],
     child: MaterialApp(
