@@ -27,6 +27,7 @@ class PostsScreen extends StatelessWidget {
         child: state.loading?
         const Center(child: const CircularProgressIndicator(),)
         :ListView.builder(
+          key: const Key("home_posts_list"),
             itemCount: state.posts.length,
             itemBuilder: (context,index){
               return Container(
