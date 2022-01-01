@@ -32,7 +32,7 @@ void main(){
       when(mockNetWorkInfo.isConnected).thenAnswer((_) async=> true);
       when(mockPostRemoteData.getPosts()).thenAnswer((_) async=> posts);
       //assr
-      final  result =await postRepository.getPost();
+      final  result =await postRepository.getPosts();
       //act
       expect(result,Right(posts));
 
@@ -43,10 +43,10 @@ void main(){
       when(mockNetWorkInfo.isConnected).thenAnswer((_) async=> true);
       when(mockPostRemoteData.getPosts()).thenAnswer((_) async=> throw ex.ServerException());
       //assr
-      final result =await  postRepository.getPost();
+      final result =await  postRepository.getPosts();
       verify(mockPostRemoteData.getPosts());
       //act
-      expect(result.isLeft(),true);
+      expect(result!.isLeft(),true);
 
     });
   });

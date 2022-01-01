@@ -6,7 +6,7 @@ import 'package:tribe_app/futures/post/domain/repository/post_repository.dart';
 class GetPosts{
   final PostRepository repository;
   GetPosts({required this.repository});
-  Future<Either<Failure,List<Post>>> getPosts() async {
-    return repository.getPost();
+  Future<Either<Failure,List<Post>>?> getPosts() async {
+    return repository.getPosts();
   }
 }

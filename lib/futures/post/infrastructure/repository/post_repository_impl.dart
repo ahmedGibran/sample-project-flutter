@@ -14,7 +14,7 @@ class PostRepositoryImpl extends PostRepository{
   PostRepositoryImpl({required this.postRemoteData, required this.netWorkInfo});
 
   @override
-  Future<Either<Failure,List<Post>>> getPost()async{
+  Future<Either<Failure,List<Post>>> getPosts()async{
    final isConnected = await  netWorkInfo.isConnected;
    if(isConnected){
      try{

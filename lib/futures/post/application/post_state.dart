@@ -22,7 +22,7 @@ class PostState extends ChangeNotifier{
     notifyListeners();
 
     final result = await getPosts.getPosts();
-    result.fold((l){
+    result!.fold((l){
       _error =true;
       _loading =false;
     }, (r){
