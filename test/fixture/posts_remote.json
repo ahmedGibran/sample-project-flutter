@@ -1,0 +1,133 @@
+{
+  "data": {
+    "posts": {
+      "totalCount": 2,
+      "nodes": [
+        {
+          "title": "Lorem Ipsum",
+          "shortContent": "<p>Lorem Ipsum is simply dummy text</p><figure data-type=\"image\" class=\"imageBlot\"><img data-id=\"VvxGwwarIMFBF2ALRYdrQ\" src=\"https://tribe-s3-production.imgix.net/VvxGwwarIMFBF2ALRYdrQ?w=1000&amp;auto=compress,format&amp;dl\" alt></figure><p><br></p>",
+          "hasMoreContent": false,
+          "followersCount": null,
+          "allowedEmojis": null,
+          "attachments": [],
+          "authMemberProps": {
+            "scopes": [
+              "post:feed:view",
+              "post:view:all"
+            ]
+          },
+          "imageIds": [
+            "VvxGwwarIMFBF2ALRYdrQ"
+          ],
+          "createdAt": "2021-12-26T21:35:47.356Z",
+          "embedIds": [],
+          "createdById": "oKQwOM1YFa",
+          "forbiddenEmojis": null,
+          "totalRepliesCount": 1,
+          "topRepliers": [
+            {
+              "member": {
+                "name": "Ahmed",
+                "email": null,
+                "banner": null,
+                "displayName": null
+              },
+              "repliesCount": 1
+            }
+          ],
+          "tags": [],
+          "spaceId": "WQGoVLBq9P42",
+          "space": {
+            "name": "General",
+            "id": "WQGoVLBq9P42"
+          },
+          "singleChoiceReactions": [],
+          "seoDetail": {
+            "description": null,
+            "title": "Lorem Ipsum",
+            "image": null
+          },
+          "replies": {
+            "edges": [
+              {
+                "node": {
+                  "title": null
+                },
+                "cursor": "eyJpZCI6IjJBbGxLNjdnQnUyNXB0WCIsIm9yZGVyQnkiOiJjcmVhdGVkQXQiLCJ2YWx1ZSI6IjIwMjEtMTItMjYgMjE6MzU6NTkuNTc0In0="
+              }
+            ]
+          },
+          "postType": {
+            "name": "Discussion"
+          },
+          "isHidden": null,
+          "isAnonymous": false
+        },
+        {
+          "title": "First post",
+          "shortContent": "<p>It's just a test post 👋  </p><figure data-type=\"image\" class=\"imageBlot\"><img data-id=\"6YqdZ93wpqnlUpI3HoGSD\" src=\"https://tribe-s3-production.imgix.net/6YqdZ93wpqnlUpI3HoGSD?w=1000&amp;auto=compress,format&amp;dl\" alt></figure><p><br></p>",
+          "hasMoreContent": false,
+          "followersCount": null,
+          "allowedEmojis": null,
+          "attachments": [],
+          "authMemberProps": {
+            "scopes": [
+              "post:feed:view",
+              "post:view:all"
+            ]
+          },
+          "imageIds": [
+            "6YqdZ93wpqnlUpI3HoGSD"
+          ],
+          "createdAt": "2021-12-25T10:55:29.161Z",
+          "embedIds": [],
+          "createdById": "oKQwOM1YFa",
+          "forbiddenEmojis": null,
+          "totalRepliesCount": 1,
+          "topRepliers": [
+            {
+              "member": {
+                "name": "Ahmed",
+                "email": null,
+                "banner": null,
+                "displayName": null
+              },
+              "repliesCount": 1
+            }
+          ],
+          "tags": [
+            {
+              "title": "posts"
+            }
+          ],
+          "spaceId": "WQGoVLBq9P42",
+          "space": {
+            "name": "General",
+            "id": "WQGoVLBq9P42"
+          },
+          "singleChoiceReactions": [],
+          "seoDetail": {
+            "description": null,
+            "title": "First post",
+            "image": null
+          },
+          "replies": {
+            "edges": [
+              {
+                "node": {
+                  "title": null
+                },
+                "cursor": "eyJpZCI6ImhYZm1rc0I5b3ExWkQzTiIsIm9yZGVyQnkiOiJjcmVhdGVkQXQiLCJ2YWx1ZSI6IjIwMjEtMTItMjUgMTA6NTY6MDguNzAwIn0="
+              }
+            ]
+          },
+          "postType": {
+            "name": "Discussion"
+          },
+          "isHidden": null,
+          "isAnonymous": false
+        }
+      ]
+    }
+  }
+}
