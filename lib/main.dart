@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(providers: [
       ChangeNotifierProvider<PostState>(
-        create: (_)=>PostState(getPosts: GetPosts(repository: PostRepositoryImpl(postRemoteData: PostRemoteDataImpl()))),
+        create: (_)=>PostState(getPosts: GetPosts(repository: PostRepositoryImpl(postRemoteData: PostRemoteDataImpl(),))),
       )
     ],
     child: MaterialApp(
