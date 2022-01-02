@@ -25,9 +25,6 @@ class PostRemoteDataImpl extends PostRemoteData{
     List<Post> posts = [];
     final query = Queries().getPosts;
     final HttpLink httpLink = HttpLink("https://app.tribe.so/graphql",defaultHeaders: header);
-    // GraphQLClient client = GraphQLClient(link: httpLink, cache: GraphQLCache(
-    //   store: InMemoryStore(),
-    // ));
     QueryResult queryResult = await graphQLClient.query(
       QueryOptions(document: query)
     );
